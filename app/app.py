@@ -7,14 +7,6 @@ app = Flask(__name__)
 
 verification_key = os.getenv("API_VERIFICATION_KEY", "default_key")
 
-@app.route('/data/memory')
-def get_memory_usage():
-    return jsonify({'memory_usage': psutil.virtual_memory()._asdict()})
-
-@app.route('/data/cpu')
-def get_cpu_usage():
-    return jsonify({'cpu_usage': psutil.cpu_percent()})
-
 @app.route('/data/containers/stats')
 def get_container_stats():
     docker_client = docker.from_env()
@@ -25,8 +17,15 @@ def get_container_stats():
             'name': container.name,
             'stats': container.stats(stream=False)
         })
-
     return jsonify({'container_stats': container_stats})
+
+@app.route('/data/memory')
+def get_memory_usage():
+    return jsonify({'current_memory_usage': psutil.virtual_memory()._asdict()})
+
+@app.route('/data/cpu')
+def get_cpu_usage():
+    return jsonify({'current_cpu_usage': psutil.cpu_percent()})
 
 @app.before_request
 def verify_api_key():
