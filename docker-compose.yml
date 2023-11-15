@@ -1,0 +1,35 @@
+version: '3'
+services:
+  flask-api:
+    image: nburgess/flask-api:1.0
+    container_name: flask-api-container
+    restart: always
+    privileged: true
+    networks:
+      - my-network
+    environment:
+      API_VERIFICATION_KEY: ${API_VERIFICATION_KEY}
+    ports:
+      - "5000:5000"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  nginx:
+    image: nginx:latest
+    container_name: nginx-container
+    restart: always
+    networks:
+      - my-network
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx/certificates:/etc/nginx/certificates
+      - ./nginx/logs:/var/log/nginx
+    depends_on:
+      - flask-api
+
+networks:
+  my-network:
+    driver: bridge

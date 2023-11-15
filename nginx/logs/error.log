@@ -1,0 +1,10 @@
+2023/11/15 11:24:04 [emerg] 1#1: unknown directive "worker_process" in /etc/nginx/nginx.conf:3
+2023/11/15 11:24:30 [emerg] 1#1: unknown directive "worker_process" in /etc/nginx/nginx.conf:3
+2023/11/15 11:25:06 [emerg] 1#1: cannot load certificate "/etc/nginx/certificates/nginx.crt": PEM_read_bio_X509_AUX() failed (SSL: error:04800064:PEM routines::bad base64 decode)
+2023/11/15 11:25:07 [emerg] 1#1: cannot load certificate "/etc/nginx/certificates/nginx.crt": PEM_read_bio_X509_AUX() failed (SSL: error:04800064:PEM routines::bad base64 decode)
+2023/11/15 11:25:09 [emerg] 1#1: cannot load certificate "/etc/nginx/certificates/nginx.crt": PEM_read_bio_X509_AUX() failed (SSL: error:04800064:PEM routines::bad base64 decode)
+2023/11/15 11:25:10 [emerg] 1#1: cannot load certificate "/etc/nginx/certificates/nginx.crt": PEM_read_bio_X509_AUX() failed (SSL: error:04800064:PEM routines::bad base64 decode)
+2023/11/15 11:25:12 [emerg] 1#1: cannot load certificate "/etc/nginx/certificates/nginx.crt": PEM_read_bio_X509_AUX() failed (SSL: error:04800064:PEM routines::bad base64 decode)
+2023/11/15 11:25:14 [emerg] 1#1: cannot load certificate "/etc/nginx/certificates/nginx.crt": PEM_read_bio_X509_AUX() failed (SSL: error:04800064:PEM routines::bad base64 decode)
+2023/11/15 11:25:18 [emerg] 1#1: cannot load certificate "/etc/nginx/certificates/nginx.crt": PEM_read_bio_X509_AUX() failed (SSL: error:04800064:PEM routines::bad base64 decode)
+2023/11/15 11:25:25 [emerg] 1#1: cannot load certificate "/etc/nginx/certificates/nginx.crt": PEM_read_bio_X509_AUX() failed (SSL: error:04800064:PEM routines::bad base64 decode)

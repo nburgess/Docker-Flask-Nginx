@@ -1,0 +1,8 @@
+172.18.0.1 - - [15/Nov/2023:11:21:13 +0000] "GET /data/memory HTTP/1.1" 200 224 "-" "PostmanRuntime/7.26.8"
+172.18.0.1 - - [15/Nov/2023:11:32:52 +0000] "GET /data/memory HTTP/1.1" 200 224 "-" "PostmanRuntime/7.26.8"
+172.18.0.1 - - [15/Nov/2023:11:33:04 +0000] "\x16\x03\x01\x00\xF7\x01\x00\x00\xF3\x03\x03\x9Ah\xDF@&\xDECsI\x80p\x03)M\x94F\xD8\xA3\xE8i]M\xC5\xBB\x86?\xCB\xF1e\xB2s@ fRt\x143\xF8\x01?Eh\xC6\xB0\xF3\x9E\x9D#b\xAE\x05SJdY\xDF;\x95\xD4\xE4\xEC\x88\xBEi\x00$\x13\x01\x13\x02\x13\x03\xC0/\xC0+\xC00\xC0,\xCC\xA9\xCC\xA8\xC0\x09\xC0\x13\xC0" 400 157 "-" "-"
+172.18.0.1 - - [15/Nov/2023:11:33:22 +0000] "GET /data/memory HTTP/1.1" 400 255 "-" "PostmanRuntime/7.26.8"
+172.18.0.1 - - [15/Nov/2023:11:34:05 +0000] "GET /data/memory HTTP/1.1" 200 224 "-" "PostmanRuntime/7.26.8"
+172.19.0.1 - - [15/Nov/2023:11:40:09 +0000] "GET /data/memory HTTP/1.1" 200 224 "-" "PostmanRuntime/7.26.8"
+172.19.0.1 - - [15/Nov/2023:11:40:30 +0000] "GET /data/containers/stats HTTP/1.1" 500 265 "-" "PostmanRuntime/7.26.8"
+172.18.0.1 - - [15/Nov/2023:12:10:35 +0000] "GET /data/containers/stats HTTP/1.1" 200 4182 "-" "PostmanRuntime/7.26.8"
